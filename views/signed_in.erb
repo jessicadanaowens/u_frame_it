@@ -1,0 +1,10 @@
+<h1>You are signed in</h1>
+
+<form method="post" action="/">
+  <input type="submit" value="Sign Out" />
+</form>
+
+<p><% if session[:user_id] == 1 %>
+        <%= session[:user_id] %>
+   <% end %>
+</p>

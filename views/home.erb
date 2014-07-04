@@ -1,0 +1,38 @@
+<h1>Welcome</h1>
+
+<h1> <%= flash[:notice] %> </h1>
+
+<h1>Sign In</h1>
+  <form action="/sessions" method="post">
+    <ul>
+      <li>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+      </li>
+      <li>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </li>
+      <li>
+        <input type="submit" value="Sign In" />
+      </li>
+    </ul>
+  </form>
+
+<h1>Register</h1>
+  <form action="/register" method="get">
+    <ul>
+      <li>
+        <label for="username">Username</label>
+        <input type="text" name="registername" id="registername" />
+      </li>
+      <li>
+        <label for="registerpassword">Password</label>
+        <input type="password" name="registerpassword" id="password" />
+      </li>
+      <li>
+        <input type="submit" value="Register" />
+      </li>
+    </ul>
+  </form>
+
